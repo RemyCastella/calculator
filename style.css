@@ -1,0 +1,142 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url("./background2.jpeg")
+}
+
+h1 {
+    font-size: 5vw;
+}
+
+.calc-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
+    height: 70%;
+    width: 30%;
+    border: 1px solid black;
+    border-radius: 4% / 2%;
+    background-color: #510037b6;
+}
+
+.display {
+    height: 15%;
+    width: 90%;
+    border-radius: 5% / 20%;
+    border: 1px solid black;
+    padding: 0.2em;
+    background-color: #ecf4de;
+}
+
+.display > div {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 95%;
+    height: 50%;
+}
+
+.results {
+    font-size: 4vw;
+}
+
+.delete {
+    width: 90%;
+    height: 12%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 0.3rem;
+}
+
+.delete > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 35%;
+    height: 100%;
+    border: 1px solid black;
+    border-radius: 5% / 10%;
+}
+
+.AC {
+    background-color: #ff8198;
+}
+
+.AC:hover{
+    background-color: #ff617d;
+}
+
+.back {
+    background-color: #ff8198;
+}
+
+.back:hover{
+    background-color: #ff617d;
+}
+
+.characters {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    height: 60%;
+}
+
+.characters > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 25%;
+    margin: 0.3rem;
+}
+
+
+.number,
+.operator,
+.eval,
+.decimal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border-radius: 10%;
+    border: 1px solid black;
+    text-align: center;
+    margin: 0.3rem;
+}
+
+.number {
+    background-color: #ecf4de;
+}
+
+.number:hover{
+    background-color: #bad788;
+}
+
+.operator,
+.eval,
+.decimal {
+    background-color: #b6e7ff
+}
+
+.operator:hover,
+.eval:hover,
+.decimal:hover {
+    background-color: #6ecfff
+}
+
+
